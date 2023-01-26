@@ -16,6 +16,7 @@ code {
 }
 .ProjectTitle {
   overflow: visible;
+  text-align: start;
 }
 .ProjectBio {
   overflow: visible;

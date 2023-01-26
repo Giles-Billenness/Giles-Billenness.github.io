@@ -32,7 +32,7 @@ export const ProjectCard = ({
             <img
                 src={projectImg}
                 className="img"
-                alt={`${projectTitle} + "gif"`}
+                alt={`${projectTitle} gif`}
             />
             <p className="Links">
                 {links}
