@@ -1,7 +1,6 @@
-name: trigger gh pages deployment
+name: trigger gh pages deployment test
 
 on:
-  push:
   pull_request:
     branches:
       - master
@@ -24,6 +23,8 @@ jobs:
 
     - name: Deploy with gh-pages
       run: |
+        npm install
+
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" -b github-pages-test
       env:
