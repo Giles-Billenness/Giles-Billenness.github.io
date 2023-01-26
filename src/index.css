@@ -9,3 +9,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.img {
+  width: 100%;
+  border: 0px solid black;
+  border-radius: 8px;
+}
+.ProjectTitle {
+  overflow: visible;
+}
+.ProjectBio {
+  overflow: visible;
+}
+.Links {
+}
+.ToolsLangs {
+}
