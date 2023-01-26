@@ -21,11 +21,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Deploy with gh-pages
+    - name: Trigger deployment
       run: |
         npm install
 
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" -b github-pages-test
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>" -b github-pages-test
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
