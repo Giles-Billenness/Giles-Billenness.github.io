@@ -1,8 +1,11 @@
 {
   "name": "my-project-website",
   "version": "1.0.0",
+  "homepage": "https://Giles-Billenness.github.io/react-gh-pages",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
