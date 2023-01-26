@@ -8,6 +8,7 @@ function App() {
                 <img src={logo} className={styles['App-logo']} alt="logo" />
                 <p>
                     Edit <code>src/App.tsx</code> and save to reload.
+                    App text change
                 </p>
                 <a
                     className={styles['App-link']}
