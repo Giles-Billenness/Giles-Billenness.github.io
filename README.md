@@ -47,6 +47,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `npm deploy`
 
 Builds and deploys a production version of the app to the `gh-pages` branch.
+Hopefully the GitHub workflows will do this automatically on pr-merge.
 
 ## Learn More
 
