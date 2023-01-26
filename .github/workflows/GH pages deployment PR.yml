@@ -2,8 +2,9 @@ name: trigger gh pages deployment
 
 on:
   push:
+  pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -21,11 +22,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Trigger deployment
+    - name: Deploy with gh-pages
       run: |
-        npm install
-
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>" -b github-pages-test
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
