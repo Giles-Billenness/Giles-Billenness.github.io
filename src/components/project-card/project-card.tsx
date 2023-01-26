@@ -32,8 +32,11 @@ export const ProjectCard = ({
             <img
                 src={projectImg}
                 className="img"
-                        />
-            <p className="Links">{links}</p>
+                alt={`${projectTitle} + "gif"`}
+            />
+            <p className="Links">
+                {links}
+            </p>
             <p className="ToolsLangs">
                 {toolsLangs}
             </p>
