@@ -6,7 +6,7 @@ function App() {
     return (
         <div className={styles.App}>
             <header className={styles['App-header']}>
-                <Title></Title>
+                <Title TitleText='Project Timeline '></Title>
                 <div className={styles['App-grid']}>
                     <ProjectCard projectTitle="Project title (Summer 2020)" projectBio="Bio about the project. What is is and why. Experimetned with x y z. Contributed to...." projectImg="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg" links="This will contain links to the project" toolsLangs="This will contain images and names of langauges and tools used">
                     </ProjectCard>
@@ -17,5 +17,7 @@ function App() {
         </div>
     );
 }
+
+// add link to icons8 for credit https://icons8.com/license
 
 export default App;
