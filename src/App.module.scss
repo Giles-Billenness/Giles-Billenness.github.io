@@ -6,7 +6,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  fill: #03b6fc;
+  fill: var(--secondaryColor);
 }
 
 :root {
@@ -16,6 +16,7 @@
   --secondaryColorOpacity: #03b5fc56;
   --textColor: #ccd6f6;
   --textColourPrimary: #a8b2d1;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -25,19 +26,19 @@
 }
 
 .App-header {
-  background-color: #0a192f;
+  background-color: var(--mainColor);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  // color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+// .App-link {
+//   color: #61dafb;
+// }
 
 @keyframes App-logo-spin {
   from {
@@ -50,15 +51,17 @@
 .App-grid {
   display: grid;
 }
-.IntroSectionDiv {
+// .IntroSectionDiv {
+
+// }
+section{
+  display: flex;
+  justify-content: center;
+  //intro section div
   margin: auto 150;
   position: relative;
   align-self: start;
   padding-top: 100px;
-}
-section{
-  display: flex;
-  justify-content: center;
 }
 
 main {
@@ -68,4 +71,10 @@ main {
   min-height: 100vh;
   display: block;
   padding: 0px 150px;
+}
+
+.sectionDiv{
+  width: 1000px;
+  background-color: var(--mainColor);
+  height: 700px;
 }

@@ -1,0 +1,40 @@
+.root {
+  text-align: start;
+}
+:root {
+  --secondaryColor: #03b6fc;
+  --textColor: #ccd6f6;
+  --textColourPrimary: #a8b2d1;
+  --mainColorLight: #112240;
+}
+.SectionTitle {
+  color: var(--textColor);
+  font-size: 32px;
+  text-align: start;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  // font-size: clamp(26px,5vw,var(--fz-heading));
+  white-space: nowrap;
+  justify-content: left;
+}
+.SectionTitle:before {
+  color: var(--secondaryColor);
+  content: './ ';
+}
+.SectionTitle:after {
+  color: var(--mainColorLight);
+  content: '';
+  display: block;
+  position: relative;
+  top: 0px;
+  width: 300px;
+  height: 0.5px;
+  margin-left: 20px;
+  background-color: var(--mainColorLight);
+}
+.TitleDiv {
+}
