@@ -1,2 +1,40 @@
 .root {
 }
+.divGrid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+.paragraphContent{
+    color: var(--textColourPrimary);
+}
+.paragraphContent h2{
+    color: var(--secondaryColor);
+    font-size: 22px;
+}
+.paragraphContent h3{
+    color: var(--textColourPrimary);
+    font-size: 13px;
+}
+.paragraphContent p{
+    color: var(--textColourPrimary);
+    font-size: 18px;
+}
+.imageContent{
+    position: relative;
+    // object-fit: cover;
+    width: 200px;
+    height: 200px;
+    // border-radius: 5px;
+    vertical-align: middle;
+    // align at top but horisontally in the middle
+    // align-self: start;
+    // justify-self: center;
+}
+// .nav-pills {
+.flex-column.nav.nav-pills{
+    --bs-nav-pills-border-radius: 0.375rem !important;
+    --bs-nav-pills-link-active-color: #fff !important;
+    --bs-nav-pills-link-active-bg: red !important;
+}
+
