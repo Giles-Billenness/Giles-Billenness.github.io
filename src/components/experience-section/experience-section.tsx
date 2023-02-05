@@ -17,7 +17,7 @@ export interface ExperienceSectionProps {
  */
 export const ExperienceSection = ({ className, children = 'ExperienceSection' }: ExperienceSectionProps) => {
     return (
-        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Tab.Container id="left-tabs" defaultActiveKey="first">
         <Row>
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">
@@ -73,7 +73,7 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
                       optio, eaque rerum! Provident similique accusantiu</p>
                   </div>
                   <div className={styles['imageContent']}>
-                    <img src="https://www.ibm.com/cloud-computing/bluemix/sites/default/files/IBM%20Cloud%20Logo.png" alt="IBM Logo" className={styles['imageContent']}/>
+                    <img src={IBMImg} alt="IBM Logo" className={styles['imageContent']}/>
                   </div>
                 </div>
               </Tab.Pane>

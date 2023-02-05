@@ -31,10 +31,25 @@
     // align-self: start;
     // justify-self: center;
 }
-// .nav-pills {
-.flex-column.nav.nav-pills{
-    --bs-nav-pills-border-radius: 0.375rem !important;
-    --bs-nav-pills-link-active-color: #fff !important;
-    --bs-nav-pills-link-active-bg: red !important;
+
+.myClass ul > li > a {
+    background-color: white;
+    color: red;
+}
+.myClass ul > li > a:hover {
+    background-color: pink;
 }
 
+/* Active tab */
+.myClass ul > li.active > a,
+.myClass ul > li.active > a:hover,
+.myClass ul > li.active > a:focus {
+    background-color: red;
+    color: white;
+}
+
+/* Disabled tab */
+.myClass ul > li.disabled > a {
+    background-color: lightgray;
+    color: darkgray;
+}

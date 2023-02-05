@@ -5,6 +5,7 @@ import { IntroSection } from './components/intro-section/intro-section';
 import { ExperienceSection } from './components/experience-section/experience-section';
 import { SectionHeader } from './components/section-header/section-header';
 import { AboutContent } from './components/about-content/about-content';
+import { ContactContent } from './components/contact-content/contact-content';
 
 function App() {
     return (
@@ -27,21 +28,20 @@ function App() {
                     </div>
                 </section>
                 <section id="projects">
-                    <div className={styles['sectionDiv']}>
-                        {/* add here */}
-                    </div>
+                    <div className={styles['sectionDiv']}>{/* add here */}</div>
                 </section>
                 <section id="contact">
                     <div className={styles['sectionDiv']}>
-                        {/* add here */}
+                        <SectionHeader sectionTitle="Contact me" />
+                        <ContactContent />
                     </div>
                 </section>
             </main>
 
-            <header className={styles['App-header']}>
+            {/* <header className={styles['App-header']}>
                 <img src={logo} className={styles['App-logo']} alt="logo" />
-                <h1 className="ProjectTitle">In Production</h1>
-            </header>
+                <h1 className="ProjectTitle">Built with react</h1>
+            </header> */}
         </div>
     );
 }
