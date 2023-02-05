@@ -23,7 +23,7 @@
 }
 .SectionTitle:before {
   color: var(--secondaryColor);
-  content: './ ';
+  content: './\00a0';
 }
 .SectionTitle:after {
   color: var(--mainColorLight);
