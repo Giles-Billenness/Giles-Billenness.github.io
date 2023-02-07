@@ -44,7 +44,7 @@ ul li::before {
     //add empty rectangle as a box shaddow
     box-shadow: 20px 20px 0 0 var(--secondaryColor);
 
-    //colour image on hover
+    //de-colour image on hover
     background-color: var(--secondaryColor);
     img {
         opacity: 0.7;

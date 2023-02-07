@@ -19,20 +19,27 @@
     flex-direction: column;
     justify-content: center;
     .ProjectTitle{
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 600;
-        color: var(--textColourPrimary);
+        color: var(--textColor);
         margin-bottom: 10px;
     }
     .ProjectBio{
+        font-size: 18px;
         background-color: var(--mainColorLight);
         color: var(--textColourPrimary);
         //add drop shaddow
-        box-shadow: 0 10px 30px -15px black;
+        box-shadow: 0 10px 15px -15px black;
+    }
+    //add on hover making box shaddow lighter
+    &:hover{
+        .ProjectBio{
+            box-shadow: 0 10px 30px -15px black;
+        }
     }
     .ToolsLangs{
         color: var(--textColourPrimary);
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 15px;
         li{
             display: inline;
@@ -40,12 +47,26 @@
         }
     }
     .Links{
+        font-size: 13px;
         margin-top: 15px;
         color: var(--textColourPrimary);
     }
 }
 .divGridImage{
-    box-shadow: 0 10px 30px -15px black;
+    box-shadow: 0 10px 15px -15px black;
+    //add on hover remove colour overlay
+        //de-colour image on hover
+        background-color: var(--secondaryColor);
+        border-radius: 5px;
+        img {
+            //zoom in image
+            transition: all 0.5s ease;
+            opacity: 0.8;
+        }
+        &:hover img{
+            // transform: scale(1.05); //gets a bit bigger
+            opacity: 1;
+        }
 }
 .ProjectCardFooterItems{
     display: flex;
