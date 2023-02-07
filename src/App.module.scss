@@ -51,18 +51,6 @@
 .App-grid {
   display: grid;
 }
-// .IntroSectionDiv {
-
-// }
-section{
-  display: flex;
-  justify-content: center;
-  //intro section div
-  margin: auto 150;
-  position: relative;
-  align-self: start;
-  padding-top: 100px;
-}
 
 main {
   margin: 0px auto;
@@ -73,8 +61,22 @@ main {
   padding: 0px 150px;
 }
 
+section{
+  display: flex;
+  justify-content: center;
+  // //intro section div
+  // margin: auto 150;
+  // position: relative;
+  // align-self: start;
+  // padding-top: 100px;
+}
+
 .sectionDiv{
-  width: 1000px;
+  // display: flex;
+  // justify-content: center;
   background-color: var(--mainColor);
-  height: 800px;
+  width: 1000px;
+  // height: 800px;
+  margin-top: 300px;
+  min-height: 600px;
 }
