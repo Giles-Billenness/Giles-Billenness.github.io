@@ -30,6 +30,7 @@
         color: var(--textColourPrimary);
         //add drop shaddow
         box-shadow: 0 10px 15px -15px black;
+        transition: all 0.5s ease;
     }
     //add on hover making box shaddow lighter
     &:hover{
