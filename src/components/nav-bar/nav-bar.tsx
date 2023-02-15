@@ -1,5 +1,5 @@
 import styles from './nav-bar.module.scss';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 // import { FaBars, FaTimes } from 'react-icons/fa';
 // import { useRef } from 'react';
 import { ReactComponent as Logo } from "../../assets/g-alphabet-icon.svg";
