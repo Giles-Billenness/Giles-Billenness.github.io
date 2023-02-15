@@ -1,0 +1,65 @@
+.root {
+}
+.divGrid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+.paragraphContent{
+
+    color: var(--textColourPrimary)
+}
+.imageContent{
+    position: relative;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    vertical-align: middle;
+    // align at top but horisontally in the middle
+    align-self: start;
+    justify-self: center;
+    border: 0.5px solid var(--secondaryColor);
+
+    //add empty rectangle as a box shaddow
+    box-shadow: 20px 20px 0 0 var(--secondaryColor);
+
+    //colour image on hover
+    background-color: var(--secondaryColor);
+    img {
+        opacity: 0.7;
+    }
+    //add nice image transition on hover
+    transition: all 0.5s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px var(--secondaryColor);
+        opacity: 1;
+    }
+}
+.imageContent h1{
+    font-size: 240px;
+    color: var(--mainColor);
+    text-align: center;
+    //text align middle vertical
+    justify-content: center;
+}
+.paragraphContent h2{
+    color: var(--textColor);
+}
+
+.emailbtnDiv{
+    display: grid;
+    place-items: center;
+}
+
+.emailbtn{
+    // color: var(--secondaryColor) !important;
+    border-color: var(--secondaryColor) !important;
+    width: 120px;
+    margin-top:50px;
+}
+
+.emailbtn:hover{
+    background-color: var(--secondaryColorOpacity) !important;
+}

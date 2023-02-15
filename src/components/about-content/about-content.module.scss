@@ -1,0 +1,59 @@
+.root {
+}
+.divGrid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+.paragraphContent{
+
+    color: var(--textColourPrimary)
+}
+.listContent{
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr;
+    gap: 10px;
+    color: var(--textColourPrimary)
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--secondaryColor); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.imageContent{
+    position: relative;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    vertical-align: middle;
+    // align at top but horisontally in the middle
+    align-self: start;
+    justify-self: center;
+    border: 0.5px solid var(--secondaryColor);
+
+    //add empty rectangle as a box shaddow
+    box-shadow: 20px 20px 0 0 var(--secondaryColor);
+
+    //de-colour image on hover
+    background-color: var(--secondaryColor);
+    img {
+        opacity: 0.7;
+    }
+    //add nice image transition on hover
+    transition: all 0.5s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px var(--secondaryColor);
+        opacity: 1;
+    }
+}

@@ -1,5 +1,7 @@
 import styles from './project-card.module.scss';
 import classNames from 'classnames';
+import Card from 'react-bootstrap/Card';
+import GithubSVG from '../../assets/github-mark-white.svg';
 
 export interface ProjectCardProps {
     className?: string;
@@ -9,6 +11,13 @@ export interface ProjectCardProps {
     projectImg: string;
     links: string;
     toolsLangs: string;
+}
+
+// function that takes a string with  comma sepearted items and returns the <li> form
+function ToolsLangsList(toolsLangs: string) {
+    var toolsLangsList = toolsLangs.split(",");
+    var toolsLangsListItems = toolsLangsList.map((item) => <li>{item}</li>);
+    return toolsLangsListItems;
 }
 
 /**
@@ -25,21 +34,37 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <h1 className="ProjectTitle">{projectTitle}</h1>
-                <p className="ProjectBio">
-                    {projectBio}
-                </p>
-            <img
-                src={projectImg}
-                className="img"
-                alt={`${projectTitle} gif`}
-            />
-            <p className="Links">
-                {links}
-            </p>
-            <p className="ToolsLangs">
-                {toolsLangs}
-            </p>
+            <div className={styles['divGrid']}>
+                <div className={styles['divGridText']}>
+                    <h1 className={styles["ProjectTitle"]}>{projectTitle}</h1>
+                        <Card className={styles['ProjectBio']}>
+                            <Card.Body>{projectBio}</Card.Body>
+                        </Card>
+                    <div className={styles["ProjectCardFooterItems"]}>
+                        <div>
+                            <ul className={styles["ToolsLangs"]}>
+                                {ToolsLangsList(toolsLangs)}
+                            </ul>
+                        </div>
+                        <div>
+                            <p className={styles["Links"]}>
+                                <a href={links}>
+                                    <img src={GithubSVG} alt="Github Icon" className={styles['LinkIcons']}/>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div className={styles['divGridImage']}>
+                    <img
+                        src={projectImg}
+                        className="img"
+                        alt={`${projectTitle} gif`}
+                    />
+                </div>
+            </div>
         </div>
     );
 };
+

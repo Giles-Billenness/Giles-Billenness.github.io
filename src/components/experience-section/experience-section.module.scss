@@ -1,0 +1,77 @@
+.root {
+}
+.divGrid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+.paragraphContent{
+    color: var(--textColourPrimary);
+}
+.paragraphContent h2{
+    color: var(--secondaryColor);
+    font-size: 22px;
+}
+.paragraphContent h3{
+    color: var(--textColourPrimary);
+    font-size: 13px;
+}
+.paragraphContent p{
+    color: var(--textColourPrimary);
+    font-size: 18px;
+}
+.imageContent{
+    position: relative;
+    // object-fit: cover;
+    width: 200px;
+    height: 200px;
+    // border-radius: 5px;
+    vertical-align: middle;
+    // align at top but horisontally in the middle
+    // align-self: start;
+    // justify-self: center;
+}
+
+.myClass ul > li > a {
+    background-color: white;
+    color: red;
+}
+.myClass ul > li > a:hover {
+    background-color: pink;
+}
+
+/* Active tab */
+.myClass ul > li.active > a,
+.myClass ul > li.active > a:hover,
+.myClass ul > li.active > a:focus {
+    background-color: red;
+    color: white;
+}
+
+/* Disabled tab */
+.myClass ul > li.disabled > a {
+    background-color: lightgray;
+    color: darkgray;
+}
+
+.listContent{
+    display: grid;
+    grid-template-columns: 0.2fr 0.5fr;
+    // gap: 20px;
+    column-gap: 50px;
+    padding: 10px;
+    color: var(--textColourPrimary)
+}
+
+// ul {
+//     list-style: none; /* Remove default bullets */
+//   }
+
+// ul li::before {
+//     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+//     color: var(--secondaryColor); /* Change the color */
+//     font-weight: bold; /* If you want it to be bold */
+//     display: inline-block; /* Needed to add space between the bullet and the text */
+//     width: 1em; /* Also needed for space (tweak if needed) */
+//     margin-left: -1em; /* Also needed for space (tweak if needed) */
+//   }
