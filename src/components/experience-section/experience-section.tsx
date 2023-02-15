@@ -81,7 +81,7 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
                     </ul>
                   </div>
                   <div className={styles['imageContent']}>
-                    <img src={IBMImg} alt="IBM Logo" className={styles['imageContent']}/>
+                    <img src={IBMImg} alt="IBM Logo" className={styles['imageContent']+ ' ' + styles['IBMLOGO']}/>
                   </div>
                 </div>
               </Tab.Pane>
