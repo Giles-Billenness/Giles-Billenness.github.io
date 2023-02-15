@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a200f7b.css",
-    "main.js": "/static/js/main.9cc736b7.js",
+    "main.css": "/static/css/main.4a291736.css",
+    "main.js": "/static/js/main.bfc93933.js",
     "static/js/496.484fa79a.chunk.js": "/static/js/496.484fa79a.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/profileImg.jpg": "/static/media/profileImg.3f447afcd43b842aa948.jpg",
+    "static/media/CompSocIcon.png": "/static/media/CompSocIcon.6333279aa87f593d4757.png",
+    "static/media/AIWritingRecog.png": "/static/media/AIWritingRecog.2d10cce0495033a7caa1.png",
+    "static/media/NLPconvoPic.png": "/static/media/NLPconvoPic.e1852929abf87c3f787f.png",
+    "static/media/IBM_logo.svg": "/static/media/IBM_logo.4cfa89b15156769dd1faeb14a8463394.svg",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.12bce11b61ecf61915d612a95aaeef24.svg",
+    "static/media/g-alphabet-icon.svg": "/static/media/g-alphabet-icon.a3b2390b61d57d43b255bde79b5d8cb6.svg",
     "index.html": "/index.html",
-    "main.9a200f7b.css.map": "/static/css/main.9a200f7b.css.map",
-    "main.9cc736b7.js.map": "/static/js/main.9cc736b7.js.map",
+    "main.4a291736.css.map": "/static/css/main.4a291736.css.map",
+    "main.bfc93933.js.map": "/static/js/main.bfc93933.js.map",
     "496.484fa79a.chunk.js.map": "/static/js/496.484fa79a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a200f7b.css",
-    "static/js/main.9cc736b7.js"
+    "static/css/main.4a291736.css",
+    "static/js/main.bfc93933.js"
   ]
 }
