@@ -32,28 +32,6 @@
     // justify-self: center;
 }
 
-.myClass ul > li > a {
-    background-color: white;
-    color: red;
-}
-.myClass ul > li > a:hover {
-    background-color: pink;
-}
-
-/* Active tab */
-.myClass ul > li.active > a,
-.myClass ul > li.active > a:hover,
-.myClass ul > li.active > a:focus {
-    background-color: red;
-    color: white;
-}
-
-/* Disabled tab */
-.myClass ul > li.disabled > a {
-    background-color: lightgray;
-    color: darkgray;
-}
-
 .listContent{
     display: grid;
     grid-template-columns: 0.2fr 0.5fr;
@@ -63,15 +41,31 @@
     color: var(--textColourPrimary)
 }
 
-// ul {
-//     list-style: none; /* Remove default bullets */
-//   }
+.ExpNavListItem{
+    background-color: var(--mainColor);
+    // border-radius: 5px;
 
-// ul li::before {
-//     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-//     color: var(--secondaryColor); /* Change the color */
-//     font-weight: bold; /* If you want it to be bold */
-//     display: inline-block; /* Needed to add space between the bullet and the text */
-//     width: 1em; /* Also needed for space (tweak if needed) */
-//     margin-left: -1em; /* Also needed for space (tweak if needed) */
-//   }
+    a[aria-selected="true"]{
+        //transition on selection
+        transition: all 0.25s ease;
+        background-color: var(--mainColorLight) !important;
+        border-radius: 0px !important;
+        border: none !important;
+        border-left: 2.5px groove var(--secondaryColor) !important;
+        //not sure how to have the boarder replace the other - just shove it in for now
+        // margin-left: -2px;
+      }
+    border-left: 2.5px solid var(--secondaryColorOpacity);
+
+    //when button is hovered over
+    transition: all 0.2s ease;
+    &:hover{
+        background-color: var(--mainColorLight);
+    }
+}
+
+//when button is clicked state
+// .ExpNavListItem :active{
+//     background-color: var(--mainColorLight);
+
+// }
