@@ -1,5 +1,5 @@
 import styles from './section-header.module.scss';
-import classNames from 'classnames';
+// import classNames from 'classnames';
 
 export interface SectionHeaderProps {
     className?: string;
