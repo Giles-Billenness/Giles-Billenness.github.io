@@ -47,7 +47,7 @@ export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
         //     </header>
         // </div>
         <>
-            <Navbar key='md' expand='md' className={styles.Navbar}>
+            <Navbar sticky="top" key='md' expand='md' className={styles.Navbar}>
             <Container fluid className={styles.Container}>
                 <Navbar.Brand href="/">
                     <Logo className="logo"/>

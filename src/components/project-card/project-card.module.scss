@@ -1,6 +1,7 @@
 .root {
 }
 .divGrid{
+    // margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -9,8 +10,8 @@
     // "projectCardDiv projectCardDiv";
     // display: grid;
     // grid-template-columns: 3fr 2fr;
-    gap: 25px;
-    height: 362px;
+    gap: 50px;
+    height: 400px;
     width: 1000px;
 }
 .divGridText{
@@ -18,6 +19,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 650px;
+
     .ProjectTitle{
         font-size: 28px;
         font-weight: 600;
@@ -61,20 +64,35 @@
     }
 }
 .divGridImage{
-    box-shadow: 0 10px 15px -15px black;
+    // box-shadow: 0 10px 15px -15px black;
     //add on hover remove colour overlay
-        //de-colour image on hover
-        background-color: var(--secondaryColor);
-        border-radius: 5px;
-        img {
-            //zoom in image
-            transition: all 0.5s ease;
-            opacity: 0.8;
-        }
-        &:hover img{
-            // transform: scale(1.05); //gets a bit bigger
-            opacity: 1;
-        }
+    //de-colour image on hover
+    // background-color: var(--secondaryColor);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        // display: block;
+        // margin-left: auto;
+        //centre vertically
+        // margin-right: auto;
+        //centre horizontally
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        width: 300px;
+        //zoom in image
+        transition: all 0.5s ease;
+        opacity: 0.8;
+    }
+    &:hover img{
+        // transform: scale(1.05); //gets a bit bigger
+        opacity: 1;
+    }
 }
 .ProjectCardFooterItems{
     display: flex;
