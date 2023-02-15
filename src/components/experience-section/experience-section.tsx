@@ -23,13 +23,13 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
         <Row>
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">
-              <Nav.Item>
+              <Nav.Item className={styles['ExpNavListItem']}>
                 <Nav.Link eventKey="first">IBM (Present)</Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item className={styles['ExpNavListItem']}>
                 <Nav.Link eventKey="second">IBM (Placement)</Nav.Link>
               </Nav.Item>
-              <Nav.Item>
+              <Nav.Item className={styles['ExpNavListItem']}>
                 <Nav.Link eventKey="third">Computing society</Nav.Link>
               </Nav.Item>
             </Nav>
