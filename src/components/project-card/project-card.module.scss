@@ -52,6 +52,13 @@
         margin-top: 15px;
         color: var(--textColourPrimary);
     }
+    .LinkIcons{
+        width: 20px;
+        fill: var(--secondaryColor);
+        .svg{
+            fill: var(--secondaryColor);
+        }
+    }
 }
 .divGridImage{
     box-shadow: 0 10px 15px -15px black;
@@ -73,5 +80,4 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    
 }

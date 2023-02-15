@@ -1,6 +1,7 @@
 import styles from './project-card.module.scss';
 import classNames from 'classnames';
 import Card from 'react-bootstrap/Card';
+import GithubSVG from '../../assets/github-mark-white.svg';
 
 export interface ProjectCardProps {
     className?: string;
@@ -47,7 +48,9 @@ export const ProjectCard = ({
                         </div>
                         <div>
                             <p className={styles["Links"]}>
-                                <a href={links}>GH</a>
+                                <a href={links}>
+                                    <img src={GithubSVG} alt="Github Icon" className={styles['LinkIcons']}/>
+                                </a>
                             </p>
                         </div>
                     </div>
