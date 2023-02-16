@@ -2,6 +2,10 @@
   // width: 1000px;
   background-color: var(--mainColor);
   // height: 700px;
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 }
 :root {
   --mainColor: #0a192f;
@@ -15,19 +19,37 @@
   font-size: 16px;
   color: var(--secondaryColor);
   margin: 0px 0px 30px 4px;
+  // animation-delay: 100ms;
+  //on load animation
+  animation: fadein ease-in both;
+  animation-duration: 1s;
+  animation-delay: 100ms;
+
 }
 .Intro-name {
   font-size: 80px;
   color: var(--textColor);
+  //on load animation
+  animation: fadein ease-in both;
+  animation-duration: 1s;
+  animation-delay: 200ms;
 }
 .Intro-subheading {
   font-size: 80px;
   color: var(--textColourPrimary);
   margin: 5px 0px 0px;
+  //on load animation
+  animation: fadein ease-in both;
+  animation-duration: 1s;
+  animation-delay: 300ms;
 }
 .Intro-bodyText {
   font-size: 20px;
   color: var(--textColourPrimary);
   margin: 20px 0px 0px;
   // word-wrap: break-word;
+  //on load animation
+  animation: fadein ease-in both;
+  animation-duration: 1s;
+  animation-delay: 400ms;
 }

@@ -17,6 +17,18 @@
   --textColor: #ccd6f6;
   --textColourPrimary: #a8b2d1;
 
+
+  //font smoothing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+
+  // animation-fill-mode: forwards;
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -59,6 +71,10 @@ main {
   min-height: 100vh;
   display: block;
   padding: 0px 150px;
+
+  //on load animation
+  // animation: fadein ease-in both;
+  // animation-duration: 1s;
 }
 
 section{

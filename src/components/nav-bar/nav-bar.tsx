@@ -66,10 +66,10 @@ export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="/#about" className={styles.NavLink}>About</Nav.Link>
-                    <Nav.Link href="/#experience" className={styles.NavLink}>Experience</Nav.Link>
-                    <Nav.Link href="/#projects" className={styles.NavLink}>Projects</Nav.Link>
-                    <Nav.Link href="/#contact" className={styles.NavLink}>Contact</Nav.Link>
+                    <Nav.Link href="/#about" className={styles.NavLink + ' ' + styles.NavBarAbout}>About</Nav.Link>
+                    <Nav.Link href="/#experience" className={styles.NavLink + ' ' + styles.NavBarExp}>Experience</Nav.Link>
+                    <Nav.Link href="/#projects" className={styles.NavLink + ' ' + styles.NavBarProj}>Projects</Nav.Link>
+                    <Nav.Link href="/#contact" className={styles.NavLink + ' ' + styles.NavBarContact}>Contact</Nav.Link>
                     </Nav>
                     <Button variant="outline-success" className={styles.CVbtn}>CV</Button>
                 </Offcanvas.Body>
