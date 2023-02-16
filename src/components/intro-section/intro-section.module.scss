@@ -22,7 +22,7 @@
   // animation-delay: 100ms;
   //on load animation
   animation: fadein ease-in both;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 100ms;
 
 }
@@ -31,16 +31,20 @@
   color: var(--textColor);
   //on load animation
   animation: fadein ease-in both;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 200ms;
 }
 .Intro-subheading {
   font-size: 80px;
   color: var(--textColourPrimary);
   margin: 5px 0px 0px;
+  //in line
+  display: flex;
+  // flex-flow: row;
+  // flex-wrap: wrap;
   //on load animation
   animation: fadein ease-in both;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 300ms;
 }
 .Intro-bodyText {
@@ -50,6 +54,6 @@
   // word-wrap: break-word;
   //on load animation
   animation: fadein ease-in both;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 400ms;
 }

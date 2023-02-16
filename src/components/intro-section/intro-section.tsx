@@ -1,5 +1,6 @@
 import styles from './intro-section.module.scss';
 import classNames from 'classnames';
+import Typewriter from 'typewriter-effect';
 
 export interface IntroSectionProps {
     className?: string;
@@ -15,7 +16,9 @@ export const IntroSection = ({ className, children = 'IntroSection' }: IntroSect
         <div className={classNames(styles.root, className)}>
             <h1 className={styles['Intro-greeting']}>Hello, I'm</h1>
             <h2 className={styles['Intro-name']}>Giles Billenness ‍‍👨‍💻</h2>
-            <h3 className={styles['Intro-subheading']}>I build things that scale</h3>
+            <h3 className={styles['Intro-subheading']}>
+                I build things that&nbsp;<Typewriter options={{strings: ['scale', 'learn', 'evolve'], autoStart: true,loop: true, delay:200}}/>
+            </h3>
             <p className={styles['Intro-bodyText']}>
                 I'm a Software Developer @ IBM, former president of the computing society @ University of Surrey and avid cook!<br></br>
                 👁️ 🐝 Ⓜ️ Currently developing Z features in IBM cloud<br></br>
