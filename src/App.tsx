@@ -8,6 +8,10 @@ import { AboutContent } from './components/about-content/about-content';
 import { ContactContent } from './components/contact-content/contact-content';
 import { ProjectsSection } from './components/projects-section/projects-section';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({once: true});
+
 function App() {
     return (
         <div className={styles.App}>
@@ -19,25 +23,25 @@ function App() {
                     </div>
                 </section>
                 <section id="about">
-                    <div className={styles['sectionDiv']}>
+                    <div data-aos="fade-up" className={styles['sectionDiv']}>
                         <SectionHeader sectionTitle="About me" />
                         <AboutContent />
                     </div>
                 </section>
                 <section id="experience">
-                    <div className={styles['sectionDiv']}>
+                    <div data-aos="fade-up" className={styles['sectionDiv']}>
                         <SectionHeader sectionTitle="Experience" />
                         <ExperienceSection />
                     </div>
                 </section>
                 <section id="projects">
-                    <div className={styles['sectionDiv']}>
+                    <div data-aos="fade-up" className={styles['sectionDiv']}>
                         <SectionHeader sectionTitle="Projects" />
                         <ProjectsSection />
                     </div>
                 </section>
                 <section id="contact">
-                    <div className={styles['sectionDiv']}>
+                    <div data-aos="fade-up" className={styles['sectionDiv']}>
                         <SectionHeader sectionTitle="Contact me" />
                         <ContactContent />
                     </div>
