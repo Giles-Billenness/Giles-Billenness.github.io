@@ -78,7 +78,7 @@ export const ProjectsSection = ({
             During this project, I developed my knowledge and ability to use a range of machine
             learning paradigms to solve a problem."
             projectImg="https://miro.medium.com/max/1400/1*TwdCOjQ0xAXT_wYQd6Qvrw.png"
-            links="https://github.com/Giles-Billenness"
+            links="https://github.com/Giles-Billenness/COM3013-Computational-Intelligence-Genetic-Algorithms"
             toolsLangs="Python,DEAP framework,Evolutionary algorithms"
             />
 
