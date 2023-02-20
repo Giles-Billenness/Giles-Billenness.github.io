@@ -37,7 +37,7 @@ export const ProjectsSection = ({
             with DarkNet53, and DETR with Resnet50) for the identification and segmentation of
             European road signs using the Mapillary traffic sign dataset."
             projectImg="https://cg.cs.tsinghua.edu.cn/traffic-sign/images/index/u18.jpg"
-            links="https://github.com/Giles-Billenness"
+            links="https://github.com/Giles-Billenness/COM3025-Deep-Learning-And-Advanced-AI-Traffic-Sign-Detection"
             toolsLangs="Python,MMC,Object Detection,Visual Transformers"
             />
 
