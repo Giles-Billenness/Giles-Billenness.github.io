@@ -26,7 +26,7 @@ export const ProjectsSection = ({
             specifically the Swin Transformer for the diagnosis of systemic medical conditions using
             retinal images (fundus images)."
             projectImg="https://storage.googleapis.com/kaggle-competitions/kaggle/4104/media/retina.jpg"
-            links="https://github.com/Giles-Billenness"
+            links="https://github.com/Giles-Billenness/Final-Year-Project-Self-supervised-Transformers"
             toolsLangs="Python,Visual Transformers,Academic Research"
             />
 
