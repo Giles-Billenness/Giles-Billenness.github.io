@@ -10,6 +10,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import CV from "../../assets/CV.pdf";
+import GithubSVG from '../../assets/github-mark-white.svg';
+import LinkedInSVG from '../../assets/linkedin.svg';
 export interface NavBarProps {
     className?: string;
     children?: React.ReactNode;
@@ -27,6 +29,14 @@ export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
                 <Navbar.Brand href="/">
                     <Logo className="logo"/>
                 </Navbar.Brand>
+                    <div className={styles.socials}>
+                        <a href="https://github.com/Giles-Billenness">
+                            <img src={GithubSVG} alt="Github Icon" className={styles.GithubIcon}/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/giles-billenness/">
+                            <img src={LinkedInSVG} alt="LinkedIn Icon" className={styles.GithubIcon}/>
+                        </a>
+                    </div>
                 <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} className={styles.navbartoggler}/>
                 <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-md`}

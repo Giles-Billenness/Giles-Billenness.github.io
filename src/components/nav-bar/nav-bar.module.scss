@@ -92,3 +92,22 @@ a:hover{
         color: var(--secondaryColor) !important;
     }
 }
+
+.socials{
+    width: 400px;
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+}
+.socials::before{
+    content: '';
+    width: 100px;
+    height: 0.5px;
+    margin-left: 20px;
+    background-color: var(--textColor);
+}
+
+.GithubIcon{
+    width: 25px;
+    // position:fixed;
+}
