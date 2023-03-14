@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import CV from "../../assets/CV.pdf";
 export interface NavBarProps {
     className?: string;
     children?: React.ReactNode;
@@ -19,33 +20,7 @@ export interface NavBarProps {
  * For details on on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-nav-bars-and-templates
  */
 export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
-    // const navRef = useRef<HTMLInputElement>(null);
-    // const showNavBar = () => {
-    //     if (navRef.current) {
-    //         navRef.current.classList.toggle('responsive_nav');
-    //     }
-    // };
-
     return (
-        // <div className={classNames(styles.root, className)}>
-        //     <header>
-        //         <h3>
-        //             <Logo className="logo"/>
-        //             <nav className="nav-links" ref={navRef}>
-        //                 <a href="/#about">./ About</a>
-        //                 <a href="/#experience">./ Experience</a>
-        //                 <a href="/#projects">./ Projects</a>
-        //                 <a href="/#contact">./ Contact</a>
-        //                 <button className="nav-btn nav-close-btn" onClick={showNavBar}>
-        //                     <FaTimes />
-        //                 </button>
-        //             </nav>
-        //             <button className="nav-btn" onClick={showNavBar}>
-        //                 <FaBars />
-        //             </button>
-        //         </h3>
-        //     </header>
-        // </div>
         <>
             <Navbar sticky="top" key='md' expand='md' className={styles.Navbar}>
             <Container fluid className={styles.Container}>
@@ -71,7 +46,7 @@ export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
                     <Nav.Link href="/#projects" className={styles.NavLink + ' ' + styles.NavBarProj}>Projects</Nav.Link>
                     <Nav.Link href="/#contact" className={styles.NavLink + ' ' + styles.NavBarContact}>Contact</Nav.Link>
                     </Nav>
-                    <Button variant="outline-success" className={styles.CVbtn}>CV</Button>
+                        <Button  variant="outline-success" href={CV} className={styles.CVbtn}>CV</Button>
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>
