@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import CV from "../../assets/CV.pdf";
 export interface NavBarProps {
     className?: string;
     children?: React.ReactNode;
@@ -71,7 +72,7 @@ export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
                     <Nav.Link href="/#projects" className={styles.NavLink + ' ' + styles.NavBarProj}>Projects</Nav.Link>
                     <Nav.Link href="/#contact" className={styles.NavLink + ' ' + styles.NavBarContact}>Contact</Nav.Link>
                     </Nav>
-                    <Button variant="outline-success" className={styles.CVbtn}>CV</Button>
+                        <Button  variant="outline-success" href={CV} className={styles.CVbtn}>CV</Button>
                 </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>
