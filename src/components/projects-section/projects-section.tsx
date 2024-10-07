@@ -4,6 +4,9 @@ import { ProjectCard } from '../project-card/project-card';
 import NLPIMG from '../../assets/NLPconvoPic.png';
 import FYPFundusIMG from '../../assets/FYPFundusProjPicCropped.png';
 import AITextIMG from '../../assets/AIWritingRecog.png';
+import SignDetectionIMG from '../../assets/SignDetectionPic.jpg';
+import CarInsuranceIMG from '../../assets/CarInsureTable.png';
+import GenAlgoIMG from '../../assets/GenAlgoPic.png';
 
 export interface ProjectsSectionProps {
     className?: string;
@@ -37,7 +40,7 @@ export const ProjectsSection = ({
             methodologies (Faster-RCNN with Resnet50, Faster-RCNN with SWIN transformer, YOLO
             with DarkNet53, and DETR with Resnet50) for the identification and segmentation of
             European road signs using the Mapillary traffic sign dataset."
-            projectImg="https://cg.cs.tsinghua.edu.cn/traffic-sign/images/index/u18.jpg"
+            projectImg={SignDetectionIMG}
             links="https://github.com/Giles-Billenness/COM3025-Deep-Learning-And-Advanced-AI-Traffic-Sign-Detection"
             toolsLangs="Python,MMC,Object Detection,Visual Transformers"
             />
@@ -65,7 +68,7 @@ export const ProjectsSection = ({
             neural networks and their performance on our data. This project was done in R using
             large-scale real car insurance data provided on Kaggle. During this project, I developed my
             ability to work in a team, researching data toward a business goal."
-            projectImg="https://www.confused.com/-/media/confused/articles/car-insurance/model-car-surrounded-by-cash-and-documents.jpg?la=en-gb&hash=557FD4BF92680205ACFC418F0F5A9694A47CCC87"
+            projectImg={CarInsuranceIMG}
             links="https://github.com/Satilianius/PBACoursework"
             toolsLangs="R,Neural Networks,Decision trees"
             />
@@ -78,7 +81,7 @@ export const ProjectsSection = ({
             approximate a function. This project was done in python using the Distributed Evolutionary Algorithms in Python (DEAP) framework.
             During this project, I developed my knowledge and ability to use a range of machine
             learning paradigms to solve a problem."
-            projectImg="https://miro.medium.com/max/1400/1*TwdCOjQ0xAXT_wYQd6Qvrw.png"
+            projectImg={GenAlgoIMG}
             links="https://github.com/Giles-Billenness/COM3013-Computational-Intelligence-Genetic-Algorithms"
             toolsLangs="Python,DEAP framework,Evolutionary algorithms"
             />
