@@ -2,6 +2,7 @@ import styles from './projects-section.module.scss';
 import classNames from 'classnames';
 import { ProjectCard } from '../project-card/project-card';
 import NLPIMG from '../../assets/NLPconvoPic.png';
+import FYPFundusIMG from '../../assets/FYPFundusProjPicCropped.png';
 import AITextIMG from '../../assets/AIWritingRecog.png';
 
 export interface ProjectsSectionProps {
@@ -25,7 +26,7 @@ export const ProjectsSection = ({
             classification of diverse systemic conditions’. I experimented with unsupervised and transfer learning with vision transformers,
             specifically the Swin Transformer for the diagnosis of systemic medical conditions using
             retinal images (fundus images)."
-            projectImg="https://storage.googleapis.com/kaggle-competitions/kaggle/4104/media/retina.jpg"
+            projectImg={FYPFundusIMG}
             links="https://github.com/Giles-Billenness/Final-Year-Project-Self-supervised-Transformers"
             toolsLangs="Python,Visual Transformers,Academic Research"
             />

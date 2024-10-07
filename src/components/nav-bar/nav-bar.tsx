@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import CV from "../../assets/CV.pdf";
+import CV from "../../assets/CV_v3.9.pdf";
 import GithubSVG from '../../assets/github-mark-white.svg';
 import LinkedInSVG from '../../assets/linkedin.svg';
 export interface NavBarProps {
