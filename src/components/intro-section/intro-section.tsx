@@ -20,10 +20,10 @@ export const IntroSection = ({ className, children = 'IntroSection' }: IntroSect
                 I build things that&nbsp;<Typewriter options={{strings: ['scale', 'learn', 'evolve'], autoStart: true,loop: true, delay:200}}/>
             </h3>
             <p className={styles['Intro-bodyText']}>
-                I'm a Software Developer @ IBM, former president of the computing society @ University of Surrey and avid cook!<br></br>
-                👁️ 🐝 Ⓜ️ Currently developing Z features in IBM cloud<br></br>
-                📚 And Im trying to learn a bit of everything<br></br>
-                🥅 Current Goals: Contribute more to Open Source projects & learn more about bleeding edge industry practices
+                I'm a Machine Learning Researcher & Software Developer, formerly @ IBM, and former president of the computing society @ University of Surrey. I'm also an avid cook!<br></br>
+                👁️ 🤖 🏥 Currently helping develop transformer models for medical image analysis and for other domains.<br></br>
+                📚 Always eager to learn new tools, architectures and improve my workflow.<br></br>
+                🥅 Current Goals: Contribute more to open-source projects and stay updated with the latest industry practices.
             </p>
         </div>
     );

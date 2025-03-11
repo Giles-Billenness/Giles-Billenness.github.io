@@ -24,13 +24,13 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item className={styles['ExpNavListItem']}>
-                <Nav.Link eventKey="first">IBM (Present)</Nav.Link>
+                <Nav.Link eventKey="first">IBM (2022 – 2024)</Nav.Link>
               </Nav.Item>
               <Nav.Item className={styles['ExpNavListItem']}>
-                <Nav.Link eventKey="second">IBM (Placement)</Nav.Link>
-              </Nav.Item>
+                <Nav.Link eventKey="second">IBM (2020 – 2021)</Nav.Link>
+              </Nav.Item> 
               <Nav.Item className={styles['ExpNavListItem']}>
-                <Nav.Link eventKey="third">Computing society</Nav.Link>
+                <Nav.Link eventKey="third">Computing society (2019)</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>
@@ -39,19 +39,44 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
               <Tab.Pane eventKey="first">
                 <div className={styles['divGrid']}>
                   <div className={styles['paragraphContent']}>
-                    <h2>Software Developer <a href="https://ibm.com">@ IBM</a> - London, England</h2>
-                    <h3>Sep, 2022 - Present</h3>
-                    <p>Currently working on IBM Z features in IBM cloud. Upgrading and maintaining systems, automating as much as I can.</p>
+                    <h2>Software Developer @ <a href="https://www.ibm.com/products/watsonx-code-assistant-z">IBM watsonx Code Assistant for IBM Z</a> LLM team - London, England</h2>
+                    <h3>Jan, 2024 - Dec, 2024</h3>
+                    <ul>
+                      <li>Developed AI-assisted application modernisation tools for COBOL and Java.</li>
+                      <li>These services are provided via IBM Cloud and VSCode extension.</li>
+                      <li>Maintained microservices in a Kubernetes (K8s) cluster, deployed using Tekton CICD pipelines, with backend services in Node.js & Python, and frontend interfaces in Typescript (React.js).</li>
+                    </ul>
                     <p>Working with:</p>
                     <ul className={styles['listContent']}>
+                        <li>K8s</li>
+                        <li>Tekton</li>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                        <li>React.js</li>
+                        <li>IBM cloud</li>
+                    </ul>
+
+                    <h2>Software Developer @ <a href="https://cloud.ibm.com/docs/hp-virtual-servers?topic=hp-virtual-servers-learn-architecture">IBM ZaaS</a> SRE team - London, England</h2>
+                    <h3>Sep, 2022 - Jan 2024</h3>
+                    <ul>
+                      <li>Developed and maintained features and tooling in IBM cloud.</li>
+                      <li>Responsible for updating and configuring devices in our service, incident response, and client on-call.</li>
+                      <li>Built and deployed automated device health check & compliance scripts in Python and expanded front end dashboards in NodeJS to assist engineers in service diagnostics, resulting in reduced downtime.</li>
+                    </ul>
+                    <p>Working with:</p>
+                    <ul className={styles['listContent']}>
+                        <li>Python</li>
+                        <li>Node.js</li>
                         <li>Containers</li>
                         <li>IBM cloud</li>
-                        <li>python</li>
-                        <li>Z mainframes</li>
                     </ul>
-                    <p>Graduate training project: In a team of other graduates we developed a sample banking application with open banking functionality
-                       (PSD2) in Java Springboot deployed in IBM WebSphere Liberty, with its own CI/CD pipeline in Tekton, utilising an interactive web app</p>
-                    <p>I am also a member of the machine learning reading group at IBM.</p>
+                    <h2>IBM Open Banking Project:</h2>
+                    <p>In a team, we created an API for a client-facing banking app adding open banking functionality (PSD2) in Java Spring Boot, 
+                      deployed in IBM WebSphere Liberty, with a Tekton CI/CD pipeline and a front-end web app in React. 
+                      Giving weekly presentations to key stakeholders.
+                    </p>
+                    <h2>IBM Machine Learning Reading Group:</h2>
+                    <p>I am also a member of the machine learning reading group at IBM. Analysing SOTA papers and attending talks from companies and researchers.</p>
                   </div>
                   <div className={styles['imageContent']}>
                     <img src={IBMImg} alt="IBM Logo" className={styles['imageContent']}/>
@@ -63,13 +88,22 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
                   <div className={styles['paragraphContent']}>
                     <h2>Software Developer <a href="https://ibm.com">@ IBM</a> - London, England</h2>
                     <h3>Jul, 2020 – Sep, 2021</h3>
-                    <p>I took on DevOps, QA automation Testing and Development roles, where I gained knowledge in the latest industry-standard
+                    <p>A rotation of: DevOps, QA automation Testing and Development roles, where I gained knowledge in the latest industry-standard
                         technology.</p>
                     <ul className={styles['paragraphlistContent']}>
-                      <li>Whilst in DevOps, I created custom tooling for the teams on location, learning Golang and using both GitHub & pipeline APIs.</li>
-                      <li>Whilst in QA, I extended their tests and data collection using the Kubernetes API.</li>
-                      <li>Whilst in Dev, I created React components, GraphQL endpoints and refactored our repository to remove all bugs, and security
-                          issues and improving on code quality (Smell)</li>
+                      <li>DevOps: Created custom tooling in Golang for the teams on location, using GitHub & pipeline APIs. Maintained Ansible install scripts and CICD pipelines in Jenkins.</li>
+                      <li>QA Automation: Extended tests and data collection using the Kubernetes API in Java.</li>
+                      <li>Development: Created React components, GraphQL endpoints and refactored our main repository removing all bugs, security issues, and improving code quality.</li>
+                    </ul>
+                    <p>Working with:</p>
+                    <ul className={styles['listContent']}>
+                        <li>Java</li>
+                        <li>React.js</li>
+                        <li>GraphQL</li>
+                        <li>Golang</li>
+                        <li>Ansible</li>
+                        <li>Jenkins</li>
+                        <li>K8s</li>
                     </ul>
                     <p>I also took part in give back opportunities and hackathons, such as:</p>
                     <ul className={styles['paragraphlistContent']}>
