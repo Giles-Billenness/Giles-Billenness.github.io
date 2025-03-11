@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import IBMImg from '../../assets/IBM_logo.svg';
 import CompSocImg from '../../assets/CompSocIcon.png';
+import UCLLogoImg from '../../assets/University_College_London_logo.svg';
+// import { default as UCLLogoImg } from '../../assets/University_College_London_logo.svg';
 
 
 export interface ExperienceSectionProps {
@@ -21,19 +23,22 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
     return (
         <Tab.Container id="left-tabs" defaultActiveKey="first">
         <Row>
-          <Col sm={3}>
+            <Col sm={3}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item className={styles['ExpNavListItem']}>
-                <Nav.Link eventKey="first">IBM (2022 – 2024)</Nav.Link>
+              <Nav.Link eventKey="fourth">UCL Institute of Ophthalmology (Present)</Nav.Link>
               </Nav.Item>
               <Nav.Item className={styles['ExpNavListItem']}>
-                <Nav.Link eventKey="second">IBM (2020 – 2021)</Nav.Link>
+              <Nav.Link eventKey="first">IBM (2022 – 2024)</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className={styles['ExpNavListItem']}>
+              <Nav.Link eventKey="second">IBM (2020 – 2021)</Nav.Link>
               </Nav.Item> 
               <Nav.Item className={styles['ExpNavListItem']}>
-                <Nav.Link eventKey="third">Computing society (2019)</Nav.Link>
+              <Nav.Link eventKey="third">Computing society (2019)</Nav.Link>
               </Nav.Item>
             </Nav>
-          </Col>
+            </Col>
           <Col sm={9}>
             <Tab.Content>
               <Tab.Pane eventKey="first">
@@ -119,32 +124,52 @@ export const ExperienceSection = ({ className, children = 'ExperienceSection' }:
                   </div>
                 </div>
               </Tab.Pane>
-              <Tab.Pane eventKey="third">
+                <Tab.Pane eventKey="third">
                 <div className={styles['divGrid']}>
                   <div className={styles['paragraphContent']}>
-                    <h2>President & Industrial Coordinator <a href="https://surreycompsoc.org/">@ The Computing Society</a> - University of Surrey - Guildford, England</h2>
-                    <h3>Jun, 2019 – Jun, 2021</h3>
-                    <p>A leadership role engaged in event management for students in the field of computing.</p>
-                    <p>During my time as President:</p>
-                    <p>I’ve chaired meetings, lead my committee to plan and execute events and formed industrial relationships, such as</p>
-                    <ul className={styles['paragraphlistContent']}>
-                      <li>Collaborating with Microsoft on improving the university’s IT functionality.</li>
-                      <li>Increasing the active members to 150, an increase of ~30% on the previous year.</li>
-                      <li>My team and I hosted charitable events throughout the year and donated proceedings ~£200 to One Laptop per Child</li>
-                      <li>In collaboration with other societies from the physical sciences department, we hosted a FEPS night where all proceedings ~£700
-                           were donated to SATRO</li>
-                    </ul>
-                    <p>As the Industrial Coordinator:</p>
-                    <p>I engaged in collaboration between the society and external companies, such as:</p>
-                    <ul className={styles['paragraphlistContent']}>
-                      <li>Organising a panel with Intel to provide students with CV and career advice.</li>
-                    </ul>
+                  <h2>President & Industrial Coordinator <a href="https://surreycompsoc.org/">@ The Computing Society</a> - University of Surrey - Guildford, England</h2>
+                  <h3>Jun, 2019 – Jun, 2021</h3>
+                  <p>A leadership role engaged in event management for students in the field of computing.</p>
+                  <p>During my time as President:</p>
+                  <p>I’ve chaired meetings, lead my committee to plan and execute events and formed industrial relationships, such as</p>
+                  <ul className={styles['paragraphlistContent']}>
+                    <li>Collaborating with Microsoft on improving the university’s IT functionality.</li>
+                    <li>Increasing the active members to 150, an increase of ~30% on the previous year.</li>
+                    <li>My team and I hosted charitable events throughout the year and donated proceedings ~£200 to One Laptop per Child</li>
+                    <li>In collaboration with other societies from the physical sciences department, we hosted a FEPS night where all proceedings ~£700 were donated to SATRO</li>
+                  </ul>
+                  <p>As the Industrial Coordinator:</p>
+                  <p>I engaged in collaboration between the society and external companies, such as:</p>
+                  <ul className={styles['paragraphlistContent']}>
+                    <li>Organising a panel with Intel to provide students with CV and career advice.</li>
+                  </ul>
                   </div>
                   <div className={styles['imageContent']}>
-                    <img src={CompSocImg} alt="IBM Logo" className={styles['imageContent']}/>
+                  <img src={CompSocImg} alt="IBM Logo" className={styles['imageContent']}/>
                   </div>
                 </div>
-              </Tab.Pane>
+                </Tab.Pane>
+                <Tab.Pane eventKey="fourth">
+                <div className={styles['divGrid']}>
+                    <div className={styles['paragraphContent']}>
+                    <h2>ML Researcher @ <a href="https://www.ucl.ac.uk/ioo/">UCL Institute of Ophthalmology</a> - London, England</h2>
+                    <h3>May, 2024 – Present</h3>
+                    <p>Joined as part of my MSc project under the supervision of Professor Pearse Keane (Keane AI Group) and Yukun Zhou, continuing after completion. For more information, see <a href="https://www.ucl.ac.uk/news/2023/sep/world-first-ai-foundation-model-eye-care-supercharge-global-efforts-prevent-blindness">this article</a>.</p>
+                    <ul className={styles['paragraphlistContent']}>
+                    <li>Attending meetings, presenting & validating findings, and collaborating with researchers on papers using machine learning in the field of ophthalmology.</li>
+                    </ul>
+                    <p>Working with:</p>
+                    <ul className={styles['listContent']}>
+                    <li>Python</li>
+                    <li>PyTorch</li>
+                    <li>Vision Transformers</li>
+                    </ul>
+                    </div>
+                  <div className={styles['imageContent']}>
+                    <img src={UCLLogoImg} alt="UCL Logo" className={styles['imageContent']+ ' ' + styles['IBMLOGO']}/>
+                  </div>
+                </div>
+                </Tab.Pane>
             </Tab.Content>
           </Col>
         </Row>
