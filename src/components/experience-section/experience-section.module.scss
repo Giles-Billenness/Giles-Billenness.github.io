@@ -1,67 +1,67 @@
 .root {
 }
-.divGrid{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 50px;
+.divGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
-.paragraphContent{
-    color: var(--textColourPrimary);
+.paragraphContent {
+  color: var(--textColourPrimary);
 }
-.paragraphContent h2{
-    color: var(--secondaryColor);
-    font-size: 22px;
+.paragraphContent h2 {
+  color: var(--secondaryColor);
+  font-size: 22px;
 }
-.paragraphContent h3{
-    color: var(--textColourPrimary);
-    font-size: 13px;
+.paragraphContent h3 {
+  color: var(--textColourPrimary);
+  font-size: 13px;
 }
-.paragraphContent p{
-    color: var(--textColourPrimary);
-    font-size: 18px;
+.paragraphContent p {
+  color: var(--textColourPrimary);
+  font-size: 18px;
 }
-.imageContent{
-    position: relative;
-    // object-fit: cover;
-    width: 200px;
-    height: 200px;
-    // border-radius: 5px;
-    vertical-align: middle;
-    // align at top but horisontally in the middle
-    // align-self: start;
-    // justify-self: center;
-}
-
-.listContent{
-    display: grid;
-    grid-template-columns: 0.2fr 0.5fr;
-    // gap: 20px;
-    column-gap: 50px;
-    padding: 10px;
-    color: var(--textColourPrimary)
+.imageContent {
+  position: relative;
+  // object-fit: cover;
+  width: 100%;
+  height: auto;
+  // border-radius: 5px;
+  vertical-align: middle;
+  // align at top but horisontally in the middle
+  // align-self: start;
+  // justify-self: center;
 }
 
-.ExpNavListItem{
-    background-color: var(--mainColor);
-    // border-radius: 5px;
+.listContent {
+  display: grid;
+  grid-template-columns: 0.2fr 0.5fr;
+  // gap: 20px;
+  column-gap: 50px;
+  padding: 10px;
+  color: var(--textColourPrimary);
+}
 
-    a[aria-selected="true"]{
-        //transition on selection
-        transition: all 0.25s ease;
-        background-color: var(--mainColorLight) !important;
-        border-radius: 0px !important;
-        border: none !important;
-        border-left: 2.5px groove var(--secondaryColor) !important;
-        //not sure how to have the boarder replace the other - just shove it in for now
-        // margin-left: -2px;
-      }
-    border-left: 2.5px solid var(--secondaryColorOpacity);
+.ExpNavListItem {
+  background-color: var(--mainColor);
+  // border-radius: 5px;
 
-    //when button is hovered over
-    transition: all 0.2s ease;
-    &:hover{
-        background-color: var(--mainColorLight);
-    }
+  a[aria-selected='true'] {
+    //transition on selection
+    transition: all 0.25s ease;
+    background-color: var(--mainColorLight) !important;
+    border-radius: 0px !important;
+    border: none !important;
+    border-left: 2.5px groove var(--secondaryColor) !important;
+    //not sure how to have the boarder replace the other - just shove it in for now
+    // margin-left: -2px;
+  }
+  border-left: 2.5px solid var(--secondaryColorOpacity);
+
+  //when button is hovered over
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: var(--mainColorLight);
+  }
 }
 
 //when button is clicked state
@@ -69,3 +69,19 @@
 //     background-color: var(--mainColorLight);
 
 // }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .divGrid {
+    grid-template-columns: 1fr;
+  }
+  .imageContent {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .imageContent { order: 1; width: 100%; max-width: 200px; }
+  .paragraphContent { order: 2; }
+  .divGrid { grid-template-columns: 1fr; }
+}

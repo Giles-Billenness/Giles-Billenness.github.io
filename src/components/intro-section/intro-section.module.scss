@@ -3,8 +3,12 @@
   background-color: var(--mainColor);
   // height: 700px;
   @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 :root {
@@ -24,31 +28,48 @@
   animation: fadein ease-in both;
   animation-duration: 0.5s;
   animation-delay: 100ms;
-
 }
+
 .Intro-name {
-  font-size: 80px;
+  font-size: clamp(3rem, 8vw, 5rem);
   color: var(--textColor);
   //on load animation
   animation: fadein ease-in both;
   animation-duration: 0.5s;
   animation-delay: 200ms;
 }
+.emoji {
+  font-size: 0.7em;
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .Intro-subheading {
-  font-size: 80px;
+  font-size: clamp(3rem, 8vw, 5rem);
   color: var(--textColourPrimary);
   margin: 5px 0px 0px;
   //in line
-  display: flex;
-  // flex-flow: row;
+  display: inline-flex;
+  flex-wrap: wrap;
+  white-space: normal;
+  align-items: center;
+  white-space: nowrap;
   // flex-wrap: wrap;
   //on load animation
   animation: fadein ease-in both;
   animation-duration: 0.5s;
   animation-delay: 300ms;
+  // .Typewriter { cant seem to target this properly
+  //   // display: inline !important;
+  //   @media (max-width: 1024px) {
+  //     display: block !important;
+  //     margin-top: 10px;
+  //     white-space: pre;
+  //   }
+  // }
 }
 .Intro-bodyText {
-  font-size: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: var(--textColourPrimary);
   margin: 20px 0px 0px;
   // word-wrap: break-word;
