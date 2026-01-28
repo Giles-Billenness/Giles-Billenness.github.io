@@ -1,113 +1,156 @@
 .root {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-:root{
-    --mainColor: #0A192F;
-    --mainColorLight: #112240;
-    --secondaryColor: #03B6FC;
-    --secondaryColorOpacity: #03b5fc56;
-    --textColor: #CCD6F6;
+:root {
+  --mainColor: #0a192f;
+  --mainColorLight: #112240;
+  --secondaryColor: #03b6fc;
+  --secondaryColorOpacity: #03b5fc56;
+  --textColor: #ccd6f6;
 }
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
   }
-
-.Navbar{
-    background-color: var(--mainColor) !important;
-    height: 70px;
-    filter: drop-shadow(0px 1px 15px black);
+  to {
+    opacity: 1;
+  }
 }
 
-nav a{
-    // align-items: right;
-    margin: 0 2rem;
+.Navbar {
+  background-color: var(--mainColor) !important;
+  height: 70px;
+  filter: drop-shadow(0px 1px 15px black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-a{
-    color: var(--textColor) !important;
+nav a {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
-.NavBarAbout{
-    animation: fadein ease-in both;
-    animation-duration: 0.5s;
-    animation-delay: 0ms;
-}
-.NavBarExp{
-    animation: fadein ease-in both;
-    animation-duration: 0.5s;
-    animation-delay: 200ms;
-}
-.NavBarProj{
-    animation: fadein ease-in both;
-    animation-duration: 0.5s;
-    animation-delay: 400ms;
-}
-.NavBarContact{
-    animation: fadein ease-in both;
-    animation-duration: 0.5s;
-    animation-delay: 600ms;
+a {
+  color: var(--textColor) !important;
 }
 
-.NavLink:before{
-    color: var(--secondaryColor);
-    content: "./ ";
+.NavBarAbout {
+  animation: fadein ease-in both;
+  animation-duration: 0.5s;
+  animation-delay: 0ms;
+}
+.NavBarExp {
+  animation: fadein ease-in both;
+  animation-duration: 0.5s;
+  animation-delay: 200ms;
+}
+.NavBarProj {
+  animation: fadein ease-in both;
+  animation-duration: 0.5s;
+  animation-delay: 400ms;
+}
+.NavBarContact {
+  animation: fadein ease-in both;
+  animation-duration: 0.5s;
+  animation-delay: 600ms;
 }
 
-a:hover{
-    color: var(--secondaryColor) !important;
+.NavLink:before {
+  display: inline-block;
+  color: var(--secondaryColor);
+  content: './ ';
+  white-space: nowrap;
 }
 
-.CVbtn{
-    color: var(--secondaryColor) !important;
-    border-color: var(--secondaryColor) !important;
-    border-style: solid;
-    // border-width: 50px;
-    width: 100px;
-    padding: 0px;
-    animation: fadein ease-in both;
-    animation-duration: 0.5s;
-    animation-delay: 500ms;
+a:hover {
+  color: var(--secondaryColor) !important;
 }
 
-.CVbtn:hover{
-    background-color: var(--secondaryColorOpacity) !important;
+.CVbtn {
+  color: var(--secondaryColor) !important;
+  border-color: var(--secondaryColor) !important;
+  border-style: solid;
+  min-width: 80px;
+  flex-shrink: 1;
+  padding: 0px;
+  white-space: nowrap;
+  animation: fadein ease-in both;
+  animation-duration: 0.5s;
+  animation-delay: 500ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Offcanvas{
-    background-color: var(--mainColorLight) !important;
-    color: var(--textColor) !important;
+.CVbtn:hover {
+  background-color: var(--secondaryColorOpacity) !important;
 }
 
-.Container{
-    padding: 0px 50px;
+.Offcanvas {
+  background-color: var(--mainColorLight) !important;
+  color: var(--textColor) !important;
+
+  // Use CSS filter to recolor Bootstrap's default close button icon
+  :global(.btn-close) {
+    filter: invert(55%) sepia(100%) saturate(2500%) hue-rotate(170deg) brightness(105%)
+      contrast(105%);
+  }
 }
 
-.navbartoggler{
-    fill: var(--secondaryColor) !important;
-    span{
-        fill: var(--secondaryColor) !important;
-        color: var(--secondaryColor) !important;
-    }
+.Container {
+  padding-left: 1rem;
 }
 
-.socials{
-    width: 400px;
-    color: var(--textColor);
+.brand {
+  margin-left: 1.5rem;
+}
+
+.navbartoggler {
+  margin-left: auto;
+  border-color: var(--secondaryColor) !important;
+
+  // Use CSS filter to recolor Bootstrap's default toggler icon
+  :global(.navbar-toggler-icon) {
+    filter: invert(55%) sepia(100%) saturate(2500%) hue-rotate(170deg) brightness(105%)
+      contrast(105%);
+  }
+}
+
+.socials {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.socials::before {
+  display: none;
+}
+
+.GithubIcon {
+  width: 25px;
+}
+
+.NavLink {
+  margin-inline: clamp(1rem, 2vw, 2rem);
+}
+
+.socials a {
+  margin-inline: 1rem;
+}
+
+@media (max-width: 1313px) {
+  .Navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.socials::before{
-    content: '';
-    width: 100px;
-    height: 0.5px;
-    margin-left: 20px;
-    background-color: var(--textColor);
+  }
 }
 
-.GithubIcon{
-    width: 25px;
-    // position:fixed;
+@media (max-width: 767px) {
+  .CVbtn {
+    display: block;
+  }
 }

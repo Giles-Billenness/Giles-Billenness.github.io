@@ -26,7 +26,7 @@ export const NavBar = ({ className, children = 'NavBar' }: NavBarProps) => {
         <>
             <Navbar sticky="top" key='md' expand='md' className={styles.Navbar}>
             <Container fluid className={styles.Container}>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/" className={styles.brand}>
                     <Logo className="logo"/>
                 </Navbar.Brand>
                     <div className={styles.socials}>
